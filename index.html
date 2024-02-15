@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading {
+  flex: 25%;
+  padding: 25px;
+}
+
+@media screen and (max-width: 792px) {
+  .heading {
+    flex: 50%;
+}
+}
+@media screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+}
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="heading" style="background-color:aqua;">
+    <h2>Heading 1</h2>
+  </div>
+  
+  <div class="heading" style="background-color:#bbb;">
+    <h2>Heading 2</h2>
+  </div>
+  
+  <div class="heading" style="background-color:orchid;">
+    <h2>Heading 3</h2>
+  </div>
+  
+  <div class="heading" style="background-color: olive;">
+    <h2>Heading 4</h2>
+  </div>
+</div>
+
+</body>
+</html>
